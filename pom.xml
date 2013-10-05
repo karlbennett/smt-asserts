@@ -3,12 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>shiver.me.timbers</groupId>
-    <artifactId>smt-assert</artifactId>
+    <artifactId>smt-asserts</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <packaging>jar</packaging>
 
-    <name>smt-assert</name>
+    <name>${artifactId}</name>
 
     <description>A library that contains useful utility methods to help with common assertions.</description>
 
