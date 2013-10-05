@@ -23,21 +23,25 @@
     <build>
         <plugins>
             <plugin>
+                <!-- Set the version of the reports plugin to use. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
                 <version>2.7</version>
             </plugin>
             <plugin>
+                <!-- Enable the generation of JavaDocs. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>${javadoc.version}</version>
             </plugin>
             <plugin>
+                <!-- Enable Jacoco test coverage reports. -->
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>${jacoco.version}</version>
                 <executions>
                     <execution>
+                        <!-- Enable instrumentation of the code before the tests run. -->
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
@@ -48,6 +52,7 @@
     </build>
 
     <reporting>
+        <!-- Make sure that the JavaDoc and Jacoco reports are linked in the site page. -->
         <plugins>
             <plugin>
                 <groupId>org.jacoco</groupId>
