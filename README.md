@@ -15,4 +15,5 @@ isNotNull(new Object()); // true
 ```
 #### Assertions
 
-All the assertions behave in the same way as their equivalent methods except that instead of returning `false` when they fail they throw an `AssertionError`.
+All the assertions behave in the same way as their equivalent methods except that instead of returning `false` when they
+fail they throw an `AssertionError`.
