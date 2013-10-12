@@ -112,6 +112,10 @@ p {
   font-weight: bold;
 }
 
+.string {
+    color: #A5C25C;
+}
+
 .comment {
   color: #999988;
   font-style: italic;
