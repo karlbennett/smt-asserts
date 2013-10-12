@@ -1,6 +1,3 @@
-Methods
--------
-
 #### isNull(Object):boolean
 This method is used for checking if the supplied value is `null`, if it is the method will return `true`. It is by it's
 very nature `null` safe.
