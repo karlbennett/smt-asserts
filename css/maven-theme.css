@@ -140,3 +140,8 @@ p {
 .poweredBy {
   display: none;
 }
+
+.xright {
+  float: right;
+  font-size: x-small;
+}
