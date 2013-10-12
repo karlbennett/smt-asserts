@@ -19,6 +19,6 @@
             <item name="Source" href="source-repository.html"/>
         </menu>
     </body>
-    <version position="none"/>
+    <version position="right"/>
     <publishDate position="none"/>
 </project>
