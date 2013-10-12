@@ -1,14 +1,16 @@
 smt-asserts is a very small library that provides some simple, but commonly needed checks and assets.
 
-Currently the library only contains `null` checks and assets.
+Currently the library only contains `null` checks and asserts.
 
 ### Usage:
 
-    isNull(null); // true
-    isNull(new Object()); // false
+<pre class="source">
+<span class="methodName">isNull</span><span class="parentheses">(</span>null<span class="parentheses">)</span>; <span class="comment">// true</span>
+<span class="methodName">isNull</span><span class="parentheses">(</span>new Object<span class="parentheses">())</span>; <span class="comment">// false</span>
 
-    isNotNull(null); // false
-    isNotNull(new Object()); // true
+<span class="methodName">isNotNull</span><span class="parentheses">(</span>null<span class="parentheses">)</span>; <span class="comment">// false</span>
+<span class="methodName">isNotNull</span><span class="parentheses">(</span>new Object<span class="parentheses">())</span>; <span class="comment">// true</span>
 
-    assertIsNull("this should be null.", new Object()); // Throws Assertions Error with string as message.
-    assertIsNotNull("this should not be null.", null); // Throws Assertions Error with string as message.
+<span class="methodName">assertIsNull</span><span class="parentheses">(</span>"this should be null.", new Object<span class="parentheses">())</span>; <span class="comment">// Throws Assertions Error with string as message.</span>
+<span class="methodName">assertIsNotNull</span><span class="parentheses">(</span>"this should not be null.", null<span class="parentheses">)</span>; <span class="comment">// Throws Assertions Error with string as message.</span>
+</pre>
