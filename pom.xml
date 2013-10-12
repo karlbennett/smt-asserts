@@ -36,6 +36,18 @@
                 </executions>
             </plugin>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.3</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.doxia</groupId>
+                        <artifactId>doxia-module-markdown</artifactId>
+                        <version>1.4</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
                 <!-- Set the version of the reports plugin to use. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
@@ -71,19 +83,9 @@
     </build>
 
     <reporting>
+        <excludeDefaults>true</excludeDefaults>
         <!-- Configure the linking of the JavaDoc and Jacoco reports in the generated Maven site. -->
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-project-info-reports-plugin</artifactId>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>index</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-            </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
