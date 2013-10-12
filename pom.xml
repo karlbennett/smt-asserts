@@ -101,9 +101,23 @@
     </build>
 
     <reporting>
-        <excludeDefaults>true</excludeDefaults>
         <!-- Configure the linking of the JavaDoc and Jacoco reports in the generated Maven site. -->
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <webAccessUrl>https://github.com/karlbennett/${project.artifactId}</webAccessUrl>
+                </configuration>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>scm</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
