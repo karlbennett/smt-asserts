@@ -12,7 +12,7 @@
 
     <description>A library that contains useful utility methods to help with common assertions.</description>
 
-    <url>http://maven.apache.org</url>
+    <url>http://karlbennett.github.io/${project.artifactId}/</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
