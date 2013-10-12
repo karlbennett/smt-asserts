@@ -148,6 +148,6 @@
     </dependencies>
 
     <scm>
-        <developerConnection>scm:git:git@github.com:karlbennett/smt-asserts.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:karlbennett/${project.artifactId}.git</developerConnection>
     </scm>
 </project>
