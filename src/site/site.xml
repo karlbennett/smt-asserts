@@ -3,13 +3,23 @@
 <project xmlns="http://maven.apache.org/DECORATION/1.3.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/DECORATION/1.3.0 http://maven.apache.org/xsd/decoration-1.3.0.xsd">
+
+    <skin>
+        <groupId>shiver.me.timbers</groupId>
+        <artifactId>smt-site-skin</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </skin>
+
     <body>
         <menu name="Overview">
-            <item name="Introduction" href="index.html"/>
+            <item name="About" href="index.html"/>
+            <item name="Documentation" href="documentation.html"/>
             <item name="Coverage" href="jacoco/index.html"/>
             <item name="JavaDoc" href="apidocs/index.html"/>
         </menu>
     </body>
+    <version position="none"/>
+    <publishDate position="none"/>
     <poweredBy>
         <logo name="" href="" img="images/powered-by-logo.png"/>
     </poweredBy>
