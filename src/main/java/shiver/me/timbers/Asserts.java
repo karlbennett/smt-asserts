@@ -1,5 +1,8 @@
 package shiver.me.timbers;
 
+import static shiver.me.timbers.Checks.isNotNull;
+import static shiver.me.timbers.Checks.isNull;
+
 /**
  * This utility class contains helpful and common assertions.
  *
@@ -8,28 +11,6 @@ package shiver.me.timbers;
 public final class Asserts {
 
     private Asserts() {
-    }
-
-    /**
-     * Check if the supplied object is {@code null}.
-     *
-     * @param object the object to check.
-     * @return {@code true} if the object is {@code null}, otherwise {@code false};
-     */
-    public static boolean isNull(Object object) {
-
-        return null == object;
-    }
-
-    /**
-     * Check if the supplied object is not {@code null}.
-     *
-     * @param object the object to check.
-     * @return {@code true} if the object is not {@code null}, otherwise {@code false};
-     */
-    public static boolean isNotNull(Object object) {
-
-        return !isNull(object);
     }
 
     /**
