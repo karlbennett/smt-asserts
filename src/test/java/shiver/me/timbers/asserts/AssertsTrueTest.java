@@ -1,8 +1,8 @@
-package shiver.me.timbers;
+package shiver.me.timbers.asserts;
 
 import org.junit.Test;
 
-import static shiver.me.timbers.Asserts.assertIsTrue;
+import static shiver.me.timbers.asserts.Asserts.assertIsTrue;
 
 /**
  * @author Karl Bennett

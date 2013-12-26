@@ -1,7 +1,7 @@
-package shiver.me.timbers;
+package shiver.me.timbers.asserts;
 
-import static shiver.me.timbers.Asserts.assertIsNull;
-import static shiver.me.timbers.Checks.*;
+import static shiver.me.timbers.asserts.Asserts.assertIsNull;
+import static shiver.me.timbers.checks.Checks.isNull;
 
 /**
  * @author Karl Bennett

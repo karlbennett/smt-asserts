@@ -1,9 +1,7 @@
-package shiver.me.timbers;
+package shiver.me.timbers.asserts;
 
-import static shiver.me.timbers.Asserts.assertIsNotNull;
-import static shiver.me.timbers.AssertsIsNullTest.NOT_NULL;
-import static shiver.me.timbers.AssertsIsNullTest.NULL;
-import static shiver.me.timbers.Checks.isNotNull;
+import static shiver.me.timbers.asserts.Asserts.assertIsNotNull;
+import static shiver.me.timbers.checks.Checks.isNotNull;
 
 /**
  * @author Karl Bennett
@@ -11,7 +9,7 @@ import static shiver.me.timbers.Checks.isNotNull;
 public class AssertsIsNotNullTest extends AbstractAssertsTest {
 
     public AssertsIsNotNullTest() {
-        super(NOT_NULL, NULL);
+        super(AssertsIsNullTest.NOT_NULL, AssertsIsNullTest.NULL);
     }
 
     @Override

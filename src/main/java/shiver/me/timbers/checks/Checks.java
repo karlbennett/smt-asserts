@@ -1,4 +1,4 @@
-package shiver.me.timbers;
+package shiver.me.timbers.checks;
 
 /**
  * This utility class contains helpful and common checks.

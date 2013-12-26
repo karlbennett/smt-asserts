@@ -1,4 +1,4 @@
-package shiver.me.timbers;
+package shiver.me.timbers.checks;
 
 import org.junit.Test;
 
@@ -8,13 +8,13 @@ import java.lang.reflect.InvocationTargetException;
 /**
  * @author Karl Bennett
  */
-public class AssertsCreateTest {
+public class ChecksCreateTest {
 
     @Test
     public void testCreate() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException,
             InstantiationException {
 
-        Constructor constructor = Asserts.class.getDeclaredConstructor();
+        Constructor constructor = Checks.class.getDeclaredConstructor();
         constructor.setAccessible(true);
         constructor.newInstance();
     }

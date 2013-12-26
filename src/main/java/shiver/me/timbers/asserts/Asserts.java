@@ -1,7 +1,7 @@
-package shiver.me.timbers;
+package shiver.me.timbers.asserts;
 
-import static shiver.me.timbers.Checks.isNotNull;
-import static shiver.me.timbers.Checks.isNull;
+import static shiver.me.timbers.checks.Checks.isNotNull;
+import static shiver.me.timbers.checks.Checks.isNull;
 
 /**
  * This utility class contains helpful and common assertions.
@@ -47,5 +47,17 @@ public final class Asserts {
     public static void assertIsNotNull(String message, Object object) {
 
         assertIsTrue(message, isNotNull(object));
+    }
+
+    /**
+     * Return a consistently structured message that can be used for a failed calls to
+     * {@link #assertIsNotNull(String, Object)} for method or constructor arguments.
+     *
+     * @param argumentName the name of the {@code null} argument.
+     * @return the message e.g. "MyClass myArg argument cannot be null."
+     */
+    public static String argumentIsNullMessage(String argumentName) {
+
+        return argumentName + " argument cannot be null.";
     }
 }

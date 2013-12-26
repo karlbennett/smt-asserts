@@ -1,4 +1,4 @@
-package shiver.me.timbers;
+package shiver.me.timbers.asserts;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Test;
